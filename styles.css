@@ -1,0 +1,143 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: white;
+  color: #202020;
+}
+
+a {
+  text-decoration: none;
+  color: #202020;
+}
+
+hr {
+  height: 8px;
+  background-color: #202020;
+}
+
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 2% 2%;
+  margin: 0px;
+}
+main {
+  padding: 10px 10px;
+}
+
+section {
+  background-color: #202020;
+  display: flex;
+  width: 100%;
+  height: 430px;
+}
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+section img:hover {
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+button {
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 22% 70%;
+  grid-template-rows: 100%;
+  gap: 6%;
+}
+
+.content-shop {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-column-gap: 10px;
+}
+
+.item {
+  color: white;
+  background-color: #202020;
+  margin-bottom: 10px;
+  padding: 8%;
+  border-radius: 5px;
+}
+.item h1 {
+  font-size: 60px;
+}
+
+.item-sm {
+  color: white;
+  background-color: #202020;
+  margin-bottom: 10px;
+  padding: 1%;
+  border-radius: 5px;
+}
+.item-sm h1 {
+  font-size: 60px;
+}
+
+.banner {
+  width: 98%;
+  margin: 0px;
+  padding: 0px;
+}
+.imgs {
+  background-color: #202020;
+  margin-bottom: 10px;
+}
+
+.content-center {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+.no-show {
+  display: none;
+}
+.shopping {
+  background-color: greenyellow;
+  border-radius: 5px;
+  border-color: green;
+  border-style: solid;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 2px;
+}
+.shopping-d {
+  background-color: #ff2f2f;
+  border-radius: 5px;
+  border-color: maroon;
+  border-style: solid;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 2px;
+}   
+
+.main {
+    padding: 1%;
+    border-radius: 5px;
+    color: #202020;
+    font-weight: 700;
+    display: flex;
+    background-color: aliceblue;
+}

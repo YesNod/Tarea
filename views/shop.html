@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav style="margin-top: 20px;">
+            <div>
+                <a href="../index.html" style="font-size: 30px;">
+                    <img style="margin-right: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEuKqVx0XBxQubTNXpJZ5EGXMVOplXEgxqJA&usqp=CAU"
+                        width="30px"
+                        alt="">Mini Software
+                </a>
+                <a style="margin-left: 60%;" href="../index.html">Inicio</a>
+                <a style="padding-left: 2%;" href="./shop.html">Tienda</a>
+                <a style="padding-left: 2%;" href="./info.html">Sobre Nosotros</a>
+                <a style="padding-left: 2%;" href="./shoppiong.html"><img
+                        src="../icons/shopping-cart.png" alt=""></a>
+                <hr>
+            </div>
+        </nav>
+        <main>
+            <h1 class="item-sm content-center" style="margin-bottom: 10px;">Categorias</h1>
+            <section>
+                <img onclick="show('node')"
+                    src="https://colorlib.com/wp/wp-content/uploads/sites/2/nodejs-frameworks.png"
+                    alt="">
+                <img onclick="show('web')"
+                    src="https://www.w3care.com/images/uploads/technologies/web-graphic-design/html-banner.jpg">
+                <img onclick="show('server')"
+                    src="https://www.racksolutions.com/news//app/uploads/AdobeStock_29162298.jpeg"
+                    alt="">
+            </section>
+            <div class="show">
+                <div class="item-sm">
+                    <div class="content-center">
+
+                        <h1>Seleciona una categoria de arriba</h1>
+                        <p>para ver las opciones de compra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="no-show" id="node">
+                <div class="item-sm">
+                    <div class="content-center">
+
+                        <h1>Node.js</h1>
+                        <p>Pide una mini aplicacion que haga cosas basicas y
+                            automatice
+                            tu dia dia</p>
+                        <div>
+                            <p>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Laboriosam dignissimos molestiae suscipit
+                                ullam ipsam maxime debitis, magnam ab tempora
+                                repellendus dolores molestias repudiandae
+                                quibusdam,
+                                rerum perspiciatis exercitationem inventore
+                                culpa
+                                porro iusto? Ad delectus minima beatae ipsa est
+                                et
+                                ducimus eius.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Servicio basico 7$/mes</h3>
+                            <button onclick="add_shop('node')"
+                                style="background-color: yellowgreen;">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no-show" id="web">
+                <div class="item-sm">
+                    <div class="content-center">
+                        <h1 class="">Web</h1>
+                        <p>Pide una pagina web para que tu empresa este en la
+                            web!</p>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Aliquam fuga saepe culpa, ducimus quaerat
+                                voluptatum
+                                eius provident ipsam iure repellat laudantium
+                                neque
+                                perspiciatis, nesciunt repellendus! Nam
+                                distinctio
+                                voluptatum natus inventore quis incidunt
+                                corporis
+                                saepe
+                                tenetur magnam, quod est dicta officiis.</p>
+                        </div>
+                        <div>
+                            <h3>Pagina basica 5$</h3>
+                            <button onclick="add_shop('web')"
+                                style="background-color: salmon;">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="no-show" id="server">
+                <div class="item-sm">
+                    <div class="content-center">
+                        <h1>Servidores</h1>
+                        <p>Compra un servidor para que tu hagas tus proyectos</p>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Rerum eligendi facilis optio incidunt
+                                pariatur
+                                totam ab laboriosam, sit molestias corrupti
+                                ratione,
+                                debitis corporis, doloremque aperiam culpa
+                                deserunt
+                                iure voluptas nesciunt quidem maxime? Expedita a
+                                sapiente unde corrupti est ea quibusdam enim
+                                dolorem
+                                id omnis? Ullam adipisci placeat autem tempora
+                                corrupti.</p>
+                        </div>
+                        <div>
+                            <h3>Server basico 10$/mes</h3>
+                            <button onclick="add_shop('server')"
+                                style="background-color: steelblue;">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no-show" id="shopping">
+            </div>
+        </main>
+    </body>
+    <footer>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+            culpa sapiente accusamus porro repellendus doloremque corrupti
+            at deserunt illo dolore!</p>
+    </footer>
+    <script>
+        function show(params) {
+            let info = document.getElementById(params)
+            let other = document.getElementsByClassName("show")[0]
+            if(other) {
+                if (other)  other.className = "no-show trans" 
+            }
+
+            info.className = "show trans"
+        }
+    </script>
+    <script src="../index.js"></script>
+</html>
